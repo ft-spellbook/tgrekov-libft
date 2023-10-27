@@ -1,29 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/24 17:54:51 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/10/28 00:56:24 by tgrekov          ###   ########.fr       */
+/*   Created: 2023/10/28 00:10:14 by tgrekov           #+#    #+#             */
+/*   Updated: 2023/10/28 00:21:13 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+void	ft_putnbr_fd(int n, int fd)
 {
-	size_t	i;
-	int		diff;
+	char	c;
 
-	i = 0;
-	while (i < n)
+	if (n == -2147483648)
 	{
-		diff = ((unsigned char *) s1)[i] - ((unsigned char *) s2)[i];
-		if (diff)
-			return (diff);
-		i++;
+		write(fd, "-2147483648", 11);
+		return ;
 	}
-	return (0);
+	if (n < 0)
+	{
+		write(fd, "-", 1);
+		n = -n;
+	}
+	if (n > 9)
+		ft_putnbr_fd(n / 10, fd);
+	c = n % 10 + '0';
+	write(fd, &c, 1);
 }

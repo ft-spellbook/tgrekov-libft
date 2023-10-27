@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 16:26:56 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/10/25 16:30:15 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/10/26 14:59:31 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	s2_len;
 	char	*s3;
 
+	if (!s1 || !s2)
+		return (0);
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
 	s3 = malloc(s1_len + s2_len + 1);

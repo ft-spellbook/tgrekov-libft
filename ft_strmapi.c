@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/24 17:54:51 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/10/28 00:56:24 by tgrekov          ###   ########.fr       */
+/*   Created: 2023/10/27 23:54:37 by tgrekov           #+#    #+#             */
+/*   Updated: 2023/10/27 23:59:27 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	i;
-	int		diff;
+	unsigned int	len;
+	char			*s2;
 
-	i = 0;
-	while (i < n)
-	{
-		diff = ((unsigned char *) s1)[i] - ((unsigned char *) s2)[i];
-		if (diff)
-			return (diff);
-		i++;
-	}
-	return (0);
+	if (!s)
+		return (0);
+	len = ft_strlen(s);
+	s2 = ft_calloc(len + 1, 1);
+	if (!s2)
+		return (0);
+	while (len--)
+		s2[len] = f(len, s[len]);
+	return (s2);
 }
