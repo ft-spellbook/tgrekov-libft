@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 14:33:28 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/10/26 15:28:57 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/04 08:27:25 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ void	*ft_calloc(size_t count, size_t size)
 	ptr = malloc(bsize);
 	if (!ptr)
 		return (0);
-	while (bsize--)
-		ptr[bsize] = 0;
+	ft_bzero(ptr, bsize);
 	return (ptr);
 }
