@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 14:26:19 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/10/24 16:22:28 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/04 08:06:43 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	if (dstsize)
 	{
 		i = 0;
-		while (src[i] && i < (dstsize - 1))
+		while (src[i] && (i + 1) < dstsize)
 		{
 			dst[i] = src[i];
 			i++;
