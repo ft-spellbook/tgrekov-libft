@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 14:26:57 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/10/28 01:51:50 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/04 21:50:20 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,23 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+/**
+ * @brief Not allowed to include limits.h, country girls make do.
+ */
+# define FT_LONG_MAX 9223372036854775807L
+
+/**
+ * @struct s_list
+ * @brief Linked list node.
+ * @typedef t_list
+ * @copybrief s_list
+ * @property s_list::content
+ * @brief @p void* to the node's contents.
+ * @property s_list::next
+ * @brief Pointer to the next node.
+ * 
+ * @p NULL for the final node in the list.
+ */
 typedef struct s_list
 {
 	void			*content;
