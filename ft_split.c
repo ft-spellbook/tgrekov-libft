@@ -6,12 +6,11 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 15:41:34 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/04 09:17:18 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/04 09:52:58 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static void	skip_chars(char const **s, char c)
 {
@@ -23,7 +22,7 @@ static size_t	count_sections(char const *s, char c)
 {
 	size_t	i;
 
-	if (!s)
+	if (!*s)
 		return (0);
 	i = 1;
 	while (*s)
