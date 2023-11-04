@@ -6,12 +6,25 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 13:37:27 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/10/24 15:21:28 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/04 22:24:23 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * @file ft_strlen.c
+ * @dontinclude ft_strlen.c
+ * @line /\* *********
+ * @until /\* *********
+ */
+
 #include "libft.h"
 
+/**
+ * @brief Get length of @p str
+ * 
+ * @param[in] str Pointer to string
+ * @retval size_t Length of string starting at pointer @p str
+ */
 size_t	ft_strlen(const char *str)
 {
 	size_t	i;

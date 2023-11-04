@@ -6,18 +6,41 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 15:41:34 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/04 09:52:58 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/05 00:40:54 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * @file ft_split.c
+ * @dontinclude ft_split.c
+ * @line /\* *********
+ * @until /\* *********
+ */
+
 #include "libft.h"
 
+/**
+ * @internal
+ * @brief Advance @p s while the current character matches @p c
+ * 
+ * @param[in, out] s Pointer to null-terminated string being advanced
+ * @param[in] c Character to skip
+ */
 static void	skip_chars(char const **s, char c)
 {
 	while (**s && **s == c)
 		(*s)++;
 }
 
+/**
+ * @internal
+ * @brief Count number of sections split by character @p c that will contain
+ * any characters
+ * 
+ * @param[in] s String to count sections of
+ * @param[in] c Character to split on
+ * @retval size_t Number of sections
+ */
 static size_t	count_sections(char const *s, char c)
 {
 	size_t	i;
@@ -39,6 +62,14 @@ static size_t	count_sections(char const *s, char c)
 	return (i);
 }
 
+/**
+ * @internal
+ * @brief Free all allocated strings and the array containing their addresses
+ * 
+ * @param[in, out] arr Allocated array of allocated string
+ * pointers, with @p NULL at the end
+ * @retval char** @p NULL
+ */
 static char	**free_all(char **arr)
 {
 	size_t	i;
@@ -50,6 +81,15 @@ static char	**free_all(char **arr)
 	return (0);
 }
 
+/**
+ * @brief Split null-terminated string @p s by characer @p c into allocated
+ * array of freeable, null-terminated strings, with @p NULL as the last element
+ * 
+ * @param[in] s Null-terminated string to split
+ * @param[in] c Character to split on
+ * @retval char** Allocated array of allocated string pointers,
+ * with @p NULL as the last element
+ */
 char	**ft_split(char const *s, char c)
 {
 	char	**arr;

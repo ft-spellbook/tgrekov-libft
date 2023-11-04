@@ -6,9 +6,16 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 20:57:54 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/10/27 21:25:25 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/04 22:46:27 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/**
+ * @file ft_itoa.c
+ * @dontinclude ft_itoa.c
+ * @line /\* *********
+ * @until /\* *********
+ */
 
 #include "libft.h"
 
@@ -32,6 +39,14 @@ static char	*edge_case(int n)
 	return (ft_strdup("-2147483648"));
 }
 
+/**
+ * @brief Converts integer @p n to null-terminated, freeable ASCII string
+ * 
+ * @param[in] n Integer to convert
+ * @retval char* Null-terminated, freeable string containing an ASCII
+ * representation of @p n, preceded by '-' if @p n is negative.  
+ * If allocation fails, returns @p NULL.
+ */
 char	*ft_itoa(int n)
 {
 	int		len;
