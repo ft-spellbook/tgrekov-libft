@@ -66,16 +66,16 @@ OBJS_BONUS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_BONUS_NAMES)))
 # $< first prerequisite
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c $(HEADERS)
 	@mkdir -p $(OBJ_DIR)$(subst $(SRC_DIR),,$(dir $<))
-	@echo Compiling $<
+	@echo Building $<
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 	@ar rcs $(NAME) $^
-	@echo Main part done
+	@echo Mandatory part done
 
 bonus: $(NAME) $(OBJS_BONUS)
 	@ar rcs $(NAME) $^
-	@echo Bonus done
+	@echo Bonus part done
 
 all: $(NAME)
 
