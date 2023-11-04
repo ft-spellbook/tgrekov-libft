@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 13:12:00 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/10/27 20:41:23 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/04 07:23:02 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_atoi(const char *str)
 	while (ft_isspace(*str))
 		str++;
 	sign = 1;
-	while (*str == '-' || *str == '+')
+	if (*str == '-' || *str == '+')
 	{
 		if (*str == '-')
 			sign *= -1;
@@ -37,9 +37,3 @@ int	ft_atoi(const char *str)
 		nbr = nbr * 10 + (*(str++) - '0');
 	return (nbr * sign);
 }
-
-/*
-handle as long
-if overflow return -1
-if underflow return 0
-*/
