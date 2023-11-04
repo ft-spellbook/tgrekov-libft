@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 15:41:34 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/10/26 18:04:29 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/04 09:17:18 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,19 +19,23 @@ static void	skip_chars(char const **s, char c)
 		(*s)++;
 }
 
-static size_t	count_sections(char	const *s, char c)
+static size_t	count_sections(char const *s, char c)
 {
 	size_t	i;
 
-	i = 0;
+	if (!s)
+		return (0);
+	i = 1;
 	while (*s)
 	{
 		if (*s == c)
 		{
 			skip_chars(&s, c);
-			i++;
+			if (*s)
+				i++;
 		}
-		s++;
+		else
+			s++;
 	}
 	return (i);
 }
