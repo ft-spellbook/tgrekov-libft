@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 13:43:01 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/04 22:47:09 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/06 13:37:49 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
  * 
  * @param[in, out] b Pointer to start of byte string
  * @param[in] c Integer representation of value to write
- * (cast to unsigned char)
+ * (cast to <tt>unsigned char</tt>)
  * @param[in] len Number of bytes to write
  * @retval void* @p b
  */
