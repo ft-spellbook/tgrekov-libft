@@ -23,6 +23,7 @@ jobs:
           repository: "tgrekov-mhl/doxygen-resources"
           ref: master
           submodules: true
+          path: "doxygen-resources/"
       - uses: mattnotmitt/doxygen-action@1.9.5
         with:
           doxyfile-path: "doxygen-resources/Doxyfile"
