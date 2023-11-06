@@ -20,7 +20,6 @@ jobs:
       - uses: ts-graphviz/setup-graphviz@v1.2.0
       - uses: actions/checkout@v4
         with:
-          owner: 
           repository: "tgrekov-mhl/doxygen-resources"
           ref: master
           submodules: true
