@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 13:12:00 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/04 22:24:49 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/06 13:25:39 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ static int	ft_isspace(char c)
  * optional + or - sign.
  * 
  * @param[in] str Pointer to string containing integer
- * @retval int Result of conversion, unless the value (handled as a
- * long during conversion), would overflow or underflow,
- * in which case it returns @p LONG_MAX or @p LONG_MIN, respectively.
+ * @retval int Result of conversion, unless the value (handled as a long during
+ * conversion), would overflow or underflow, in which case it returns
+ * @ref FT_LONG_MAX or <tt>@ref FT_LONG_MAX - 1</tt>, respectively.
  */
 int	ft_atoi(const char *str)
 {
