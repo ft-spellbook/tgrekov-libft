@@ -88,11 +88,3 @@ fclean: clean
 	@rm -f $(NAME)
 
 re: fclean all
-
-docs:
-	@cp -r ~/doxygen-resources ./
-	@doxygen doxygen-resources/Doxyfile
-	@rm -rf doxygen-resources
-
-untrack:
-	@git rm --cached .gitignore
