@@ -6,9 +6,21 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 14:26:57 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/04 21:50:20 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/06 09:55:27 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/**
+ * @file libft.h
+ * @dontinclude libft.h
+ * @line /\* *********
+ * @until /\* *********
+ */
+
+/**
+ * @mainpage
+ * You're looking for @ref libft.h "libft.h"
+ */
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -17,7 +29,7 @@
 # include <unistd.h>
 
 /**
- * @brief Not allowed to include limits.h, country girls make do.
+ * @brief Not allowed to include limits.h
  */
 # define FT_LONG_MAX 9223372036854775807L
 
