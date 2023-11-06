@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 13:43:01 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/06 13:37:49 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/06 15:37:00 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 #include "libft.h"
 
 /**
- * @brief Fills @p len bytes of byte string @p b with value @c
+ * @brief Fills @p len bytes of byte string @p b with value @p c
  * 
  * @param[in, out] b Pointer to start of byte string
  * @param[in] c Integer representation of value to write
