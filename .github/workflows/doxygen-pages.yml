@@ -1,5 +1,11 @@
 name: Generate Doxygen documentation and deploy to pages
+
 on: [push]
+
+env:
+  DOXYGEN_PROJECT_NAME: "libft"
+  DOXYGEN_PROJECT_BRIEF: "tgrekov School42 libft 2023"
+
 jobs:
   docs:
     permissions:
@@ -17,7 +23,6 @@ jobs:
           owner: tgrekov-mhl
           repository: doxygen-resources
           branch: master
-      - run: "cp doxygen-resources/* ./"
       - uses: mattnotmitt/doxygen-action@1.9.5
       - uses: actions/configure-pages@v3
       - uses: actions/upload-pages-artifact@v2
