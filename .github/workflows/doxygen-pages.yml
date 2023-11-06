@@ -1,0 +1,34 @@
+name: Generate Doxygen documentation and deploy to pages
+
+on: [push]
+
+env:
+  DOXYGEN_PROJECT_NAME: "libft"
+  DOXYGEN_PROJECT_BRIEF: "tgrekov School42 libft 2023"
+
+jobs:
+  docs:
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.doc_deploy.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ts-graphviz/setup-graphviz@v1.2.0
+      - uses: GuillaumeFalourd/clone-github-repo-action@v2.2
+        with:
+          owner: tgrekov-mhl
+          repository: doxygen-resources
+          branch: master
+      - uses: mattnotmitt/doxygen-action@1.9.5
+        with:
+          doxyfile-path: "doxygen-resources/Doxyfile"
+      - uses: actions/configure-pages@v3
+      - uses: actions/upload-pages-artifact@v2
+        with:
+          path: "docs/html"
+      - id: doc_deploy
+        uses: actions/deploy-pages@v2
