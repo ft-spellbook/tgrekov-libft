@@ -16,13 +16,14 @@ jobs:
       url: ${{ steps.doc_deploy.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ts-graphviz/setup-graphviz@v1.2.0
-      - uses: GuillaumeFalourd/clone-github-repo-action@v2.2
+      - uses: actions/checkout@v4
         with:
-          owner: tgrekov-mhl
-          repository: doxygen-resources
-          branch: master
+          owner: 
+          repository: "tgrekov-mhl/doxygen-resources"
+          ref: master
+          submodules: true
       - uses: mattnotmitt/doxygen-action@1.9.5
         with:
           doxyfile-path: "doxygen-resources/Doxyfile"
