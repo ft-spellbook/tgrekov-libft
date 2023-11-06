@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 15:14:33 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/04 22:46:55 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/06 13:37:15 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
  * If your @p dst starts at any point after your @p src, even if they overlap,
  * this function is safe.  
  * If your @p dst starts prior to your @p src and overlaps it, or there is
- * a possibility of this happening, use @ref ft_memmove "ft_memmove".
+ * a possibility of this happening, use @ref ft_memmove.
  * 
  * @param[in] dst Pointer to destination byte string
  * @param[in] src Pointer to source byte string
