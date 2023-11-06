@@ -59,7 +59,7 @@ SRCS_BONUS = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_BONUS_NAMES)))
 OBJS_BONUS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_BONUS_NAMES)))
 
 #Non-filename targets
-.PHONY: bonus all clean fclean re docs
+.PHONY: bonus all clean fclean re docs untrack
 
 # $@ name of the rule
 # $^ prerequisite of the rule
@@ -93,3 +93,6 @@ docs:
 	@cp -r ~/doxygen-resources ./
 	@doxygen doxygen-resources/Doxyfile
 	@rm -rf doxygen-resources
+
+untrack:
+	@git rm --cached .gitignore
