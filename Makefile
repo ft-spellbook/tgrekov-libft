@@ -59,7 +59,7 @@ SRCS_BONUS = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_BONUS_NAMES)))
 OBJS_BONUS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_BONUS_NAMES)))
 
 #Non-filename targets
-.PHONY: bonus all clean fclean re docs untrack
+.PHONY: all clean fclean re docs untrack
 
 # $@ name of the rule
 # $^ prerequisite of the rule
@@ -73,15 +73,18 @@ $(NAME): $(OBJS)
 	@ar rcs $(NAME) $^
 	@echo Mandatory part done
 
-bonus: $(NAME) $(OBJS_BONUS)
+.bonus: $(NAME) $(OBJS_BONUS)
 	@ar rcs $(NAME) $^
 	@echo Bonus part done
+	@touch .bonus
+
+bonus: .bonus
 
 all: $(NAME)
 
 clean:
-	@echo Removing $(OBJ_DIR)
-	@rm -rf $(OBJ_DIR)
+	@echo Removing $(OBJ_DIR) and .bonus
+	@rm -rf $(OBJ_DIR) .bonus
 
 fclean: clean
 	@echo Removing $(NAME)
