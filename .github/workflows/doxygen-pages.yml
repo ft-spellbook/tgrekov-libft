@@ -3,8 +3,8 @@ name: Generate Doxygen documentation and deploy to pages
 on: [push]
 
 env:
-  DOXYGEN_PROJECT_NAME: "libft Has Moved!"
-  DOXYGEN_PROJECT_BRIEF: "This project has moved!"
+  DOXYGEN_PROJECT_NAME: "libft"
+  DOXYGEN_PROJECT_BRIEF: "tgrekov School42 libft 2023"
 
 jobs:
   docs:
