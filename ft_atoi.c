@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 13:12:00 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/06 13:25:39 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/06 21:21:03 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,7 @@ int	ft_atoi(const char *str)
 		{
 			if (sign == 1)
 				return ((int) FT_LONG_MAX);
-			else
-				return ((int) -FT_LONG_MAX -1L);
+			return ((int) -FT_LONG_MAX -1L);
 		}
 	}
 	return (nbr * sign);
