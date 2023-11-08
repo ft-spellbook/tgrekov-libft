@@ -10,27 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/**
- * @file ft_strlcat.c
- * @dontinclude ft_strlcat.c
- * @line /\* *********
- * @until /\* *********
- */
-
 #include "libft.h"
 
-/**
- * @brief Appends at most <tt>dstsize - @ref ft_strlen"ft_strlen"(dst) - 1</tt>
- * characters of string @p src to the end of string @p dst
- * 
- * Null-terminates @p dst if <tt>dstsize != 0</tt> and
- * <tt>@ref ft_strlen"ft_strlen"(dst) < dstsize</tt>
- * 
- * @param dst 
- * @param src 
- * @param dstsize 
- * @retval size_t 
- */
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	src_len;
