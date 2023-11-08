@@ -10,8 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * @file ft_strdup.c
+ * @dontinclude ft_strdup.c
+ * @line /\* *********
+ * @until /\* *********
+ */
+
 #include "libft.h"
 
+/**
+ * @brief Allocates memory for, copies to, and
+ * returns a pointer to a duplicate of @p s1
+ * 
+ * @param[in] s1 Null-terminated string to copy
+ * @retval char* Freeable, null-terminated, duplicate string, result of malloc
+ */
 char	*ft_strdup(const char *s1)
 {
 	size_t	size;
