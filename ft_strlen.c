@@ -10,21 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/**
- * @file ft_strlen.c
- * @dontinclude ft_strlen.c
- * @line /\* *********
- * @until /\* *********
- */
-
 #include "libft.h"
 
-/**
- * @brief Get length of @p str
- * 
- * @param[in] str Pointer to string
- * @retval size_t Length of string starting at pointer @p str
- */
 size_t	ft_strlen(const char *str)
 {
 	size_t	i;
