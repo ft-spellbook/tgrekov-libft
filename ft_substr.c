@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 16:35:17 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/09 20:04:35 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:54:14 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@
  * starting at @p s + @p start, and ending no later than
  * @p s + @p start + @p len
  * 
- * @param s Null-terminated string to make a substring of
- * @param start Position from @p s at which to start
- * @param len Maximum length of the substring to make
+ * @param[in] s Null-terminated string to make a substring of
+ * @param[in] start Position from @p s at which to start
+ * @param[in] len Maximum length of the substring to make
  * @retval char* Pointer to allocated null-terminated substring
  */
 char	*ft_substr(char const *s, unsigned int start, size_t len)

@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 01:46:44 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/06 12:25:44 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:53:38 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@
  * @brief Iterates over a list and applies
  * the function @p f over each @ref s_list "node"
  * 
- * @param lst Pointer to the first @ref s_list "node" in the list
- * @param f Function which accepts the
+ * @param[in] lst Pointer to the first @ref s_list "node" in the list
+ * @param[in] f Function which accepts the
  * @ref s_list::content "content" of a @ref s_list "node"
  */
 void	ft_lstiter(t_list *lst, void (*f)(void *))

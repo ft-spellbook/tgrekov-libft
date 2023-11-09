@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 01:38:22 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/06 13:06:04 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:52:40 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@
  * @brief Delete every @ref s_list "node" in a list
  * along with it's @ref s_list::content "content"
  * 
- * @param lst Pointer to a pointer to the first @ref s_list "node" in the list
- * @param del Function used to properly handle the deletion of the
+ * @param[in, out] lst Pointer to a pointer to the first @ref s_list "node" in the list
+ * @param[in] del Function used to properly handle the deletion of the
  * @ref s_list "node"'s @ref s_list::content "content"
  */
 void	ft_lstclear(t_list	**lst, void (*del)(void *))

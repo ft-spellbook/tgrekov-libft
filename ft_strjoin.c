@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 16:26:56 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/09 20:12:18 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:53:09 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@
  * @brief Allocates enough space for and appends string @p s2 to string @p s1
  * and returns the new string.
  * 
- * @param s1 Null-terminated prefix string
- * @param s2 Null-terminated suffix string
+ * @param[in] s1 Null-terminated prefix string
+ * @param[in] s2 Null-terminated suffix string
  * @retval char* Null-terminated combination of @p s1 and @p s2
  */
 char	*ft_strjoin(char const *s1, char const *s2)

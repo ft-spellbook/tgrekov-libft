@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 17:25:34 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/09 20:05:31 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:52:51 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@
 /**
  * @brief Compare up to @p n characters of string @p s1 with string @p s2
  * 
- * @param s1 Optionally null-terminated string
- * @param s2 Optionally null-terminated string
- * @param n Maximum number of characters to compare
+ * @param[in] s1 Optionally null-terminated string
+ * @param[in] s2 Optionally null-terminated string
+ * @param[in] n Maximum number of characters to compare
  * @retval int Result of subtracting the differing
  * character of @p s2 from that of @p s1.  
  * If no difference was found in @p n characters, or before the strings were
