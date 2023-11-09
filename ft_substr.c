@@ -6,12 +6,29 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 16:35:17 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/10/26 17:52:13 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:00:42 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * @file ft_substr.c
+ * @dontinclude ft_substr.c
+ * @line /\* *********
+ * @until /\* *********
+ */
+
 #include "libft.h"
 
+/**
+ * @brief Allocates and returns a null-terminated substring of @p s,
+ * starting at @p s + @p start, and ending no later than
+ * @p s + @p start + @p len
+ * 
+ * @param s Null-terminated string to make a substring of
+ * @param start Position from @p s at which to start
+ * @param len Maximum length of the substring to make
+ * @retval char* Pointer to allocated substring
+ */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	s2_len;
