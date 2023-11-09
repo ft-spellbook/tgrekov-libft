@@ -13,4 +13,4 @@ jobs:
     uses: ft-spellbook/doxygen-global/.github/workflows/doxygen-pages.yml@master
     with:
       name: "tgrekov-libft"
-      brief: "HIVE libft Oct. 2023"
+      brief: "HIVE libft Oct 2023"
