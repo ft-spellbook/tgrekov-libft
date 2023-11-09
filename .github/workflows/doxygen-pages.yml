@@ -10,7 +10,7 @@ jobs:
     permissions:
       pages: write
       id-token: write
-    uses: ft-spellbook/mock-global/.github/workflows/test.yml@master
+    uses: ft-spellbook/doxygen-global/.github/workflows/doxygen-pages.yml@master
     with:
       name: "libft"
       brief: "tgrekov School42 libft 2023"
