@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 20:57:54 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/04 22:46:27 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:12:57 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,10 @@ static char	*edge_case(int n)
 }
 
 /**
- * @brief Converts integer @p n to null-terminated, freeable ASCII string
+ * @brief Converts integer @p n to an allocated ASCII string
  * 
  * @param[in] n Integer to convert
- * @retval char* Null-terminated, freeable string containing an ASCII
+ * @retval char* Null-terminated string containing an ASCII
  * representation of @p n, preceded by '-' if @p n is negative.  
  * If allocation fails, returns @p NULL.
  */

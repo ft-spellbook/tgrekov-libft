@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 17:59:54 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/06 13:49:31 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:08:01 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@
  * Null-terminates @p dst if <tt>dstsize != 0</tt> and
  * <tt>@ref ft_strlen"ft_strlen"(dst) < dstsize</tt>
  * 
- * @param dst 
- * @param src 
- * @param dstsize 
- * @retval size_t 
+ * @param dst Null-terminated string to append to
+ * @param src Null terminated string to append from
+ * @param dstsize Maximum size of the destination after appending
+ * @retval size_t Length of the string the function attempted to create
  */
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

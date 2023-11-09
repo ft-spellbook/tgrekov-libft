@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 16:36:17 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/04 22:49:37 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:04:56 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  */
 
 /**
- * @brief Finds last occurence of @p c in null-terminated string at @p s
+ * @brief Finds last occurence of @p c in string at @p s
  * 
  * Check is done as @p char
  * 

@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 13:12:00 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/08 01:47:47 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:05:02 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int	ft_isspace(char c)
 }
 
 /**
- * @brief Converts null-terminated ASCII string @p str to integer
+ * @brief Converts ASCII string @p str to integer representation
  * 
  * Converts the initial numerical portion of the
  * string at pointer @p str to int representation.
@@ -34,7 +34,7 @@ static int	ft_isspace(char c)
  * Numerical portion may be preceded by a singular
  * optional + or - sign.
  * 
- * @param[in] str Pointer to string containing integer
+ * @param[in] str Null-terminated string containing integer
  * @retval int Result of conversion, unless the value (handled as a long during
  * conversion), would overflow or underflow, in which case it returns
  * @ref FT_LONG_MAX or <tt>@ref FT_LONG_MAX - 1</tt>, respectively.

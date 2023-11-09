@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 13:37:27 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/04 22:24:23 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:06:03 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 /**
  * @brief Get length of @p str
  * 
- * @param[in] str Pointer to string
+ * @param[in] str String to get the length of
  * @retval size_t Length of string starting at pointer @p str
  */
 size_t	ft_strlen(const char *str)

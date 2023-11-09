@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 16:28:27 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/04 22:47:55 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:10:30 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  */
 
 /**
- * @brief Finds first occurence of @p c in null-terminated string at @p s
+ * @brief Finds first occurence of character @p c in string @p s
  * 
  * Check is done as @p char
  * 

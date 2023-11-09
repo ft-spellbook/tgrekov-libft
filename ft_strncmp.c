@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 17:25:34 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/09 19:56:52 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:05:31 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@
 #include "libft.h"
 
 /**
- * @brief Compare up to @p n characters of optionally null-terminated string
- * @p s1 with optionally null-terminated string @p s2
+ * @brief Compare up to @p n characters of string @p s1 with string @p s2
  * 
  * @param s1 Optionally null-terminated string
  * @param s2 Optionally null-terminated string

@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 14:26:19 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/06 13:45:11 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:06:35 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@
 #include "libft.h"
 
 /**
- * @brief Copy at most <tt>dstsize - 1</tt> characters from optionally
- * null-terminated string @p src into @p dst
+ * @brief Copy at most <tt>dstsize - 1</tt> characters
+ * from string @p src into @p dst
  * 
  * Null-terminates @p dst if <tt>dstsize != 0</tt>
  * 
  * @param[in, out] dst Pointer to allocated memory of at least
  * @ref ft_strlen(<tt>src</tt>) or @p dstsize size, whichever is smaller
- * @param[in] src Pointer to a character in an optionally null-terminated
+ * @param[in] src Optionally null-terminated string
  * string
  * @param[in] dstsize Number of characters to copy, should be no greater than
  * the allocated space at @p dst

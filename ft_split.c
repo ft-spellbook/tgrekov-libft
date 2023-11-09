@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 15:41:34 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/06 13:34:29 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:12:39 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,8 +58,8 @@ static char	**free_all(char **arr)
 }
 
 /**
- * @brief Split null-terminated string @p s by characer @p c into allocated
- * array of freeable, null-terminated strings, with @p NULL as the last element
+ * @brief Split string @p s by characer @p c into allocated array of
+ * strings, with @p NULL as the last element
  * 
  * @param[in] s Null-terminated string to split
  * @param[in] c Character to split on

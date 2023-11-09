@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 00:00:09 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/04 23:03:02 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:09:45 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@
 #include "libft.h"
 
 /**
- * @brief Applies function @p f to each
- * character of null-terminated string @p s
+ * @brief Applies function @p f to each character of string @p s
  * 
  * This function iterates from end to start
  * 

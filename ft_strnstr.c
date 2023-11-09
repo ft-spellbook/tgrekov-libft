@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 12:42:03 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/04 22:48:22 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:05:15 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@
 #include "libft.h"
 
 /**
- * @brief Finds first occurence of null-terminated string
- * @p needle in optionally null-terminated string @p haystack
+ * @brief Finds first occurence of @p needle in string @p haystack
  * 
  * @param[in] haystack Optionally null-terminated string haystack to search
  * @param[in] needle Null-terminated string needle to find
