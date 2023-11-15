@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 01:50:13 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/06 12:28:11 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/15 23:56:42 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,26 +34,25 @@
  */
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*start;
+	t_list	*lst2;
 	t_list	*new;
+	void	*new_content;
 
 	if (!lst || !f || !del)
 		return (0);
-	start = ft_lstnew(f(lst->content));
-	if (!start)
-		return (0);
-	new = start;
-	lst = lst->next;
+	lst2 = 0;
 	while (lst)
 	{
-		new->next = ft_lstnew(f(lst->content));
-		new = new->next;
+		new_content = f(lst->content);
+		new = ft_lstnew(new_content);
 		if (!new)
 		{
-			ft_lstclear(&start, del);
+			del(new_content);
+			ft_lstclear(&lst2, del);
 			return (0);
 		}
+		ft_lstadd_back(&lst2, new);
 		lst = lst->next;
 	}
-	return (start);
+	return (lst2);
 }
