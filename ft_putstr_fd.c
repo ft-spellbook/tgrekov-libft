@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 00:06:25 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/04 22:47:48 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/15 23:37:16 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,7 @@
  */
 void	ft_putstr_fd(char *s, int fd)
 {
-	size_t	len;
-
 	if (!s)
 		return ;
-	len = ft_strlen(s);
-	write(fd, s, len);
+	write(fd, s, ft_strlen(s));
 }
