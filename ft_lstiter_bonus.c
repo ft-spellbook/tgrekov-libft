@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 01:46:44 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/09 20:53:38 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/20 19:21:04 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@
  */
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
+	if (!f)
+		return ;
 	while (lst)
 	{
 		f(lst->content);

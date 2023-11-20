@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 01:50:13 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/15 23:56:42 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/20 19:22:20 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new;
 	void	*new_content;
 
-	if (!lst || !f || !del)
+	if (!lst)
 		return (0);
 	lst2 = 0;
 	while (lst)
@@ -47,7 +47,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		new = ft_lstnew(new_content);
 		if (!new)
 		{
-			del(new_content);
+			if (del)
+				del(new_content);
 			ft_lstclear(&lst2, del);
 			return (0);
 		}

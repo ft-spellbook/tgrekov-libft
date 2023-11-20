@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 01:38:22 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/13 22:10:23 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/20 19:21:31 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	ft_lstclear(t_list	**lst, void (*del)(void *))
 {
 	t_list	*next;
 
-	if (!lst || !del)
+	if (!lst)
 		return ;
 	while (*lst)
 	{

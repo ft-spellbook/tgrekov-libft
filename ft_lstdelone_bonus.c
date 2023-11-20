@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 01:31:35 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/09 20:53:59 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/11/20 19:21:44 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,9 @@
  */
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (!lst || !del)
+	if (!lst)
 		return ;
-	del(lst->content);
+	if (del)
+		del(lst->content);
 	free(lst);
 }
