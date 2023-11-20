@@ -10,47 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/**
- * @file libft.h
- * @dontinclude libft.h
- * @line /\* *********
- * @until /\* *********
- */
-
-/**
- * @page quick_links Quick Links
- * You're probably looking for @ref libft.h!  
- * Or maybe my @ref Makefile?
- */
-
-/**
- * @page Makefile
- * @include Makefile
- */
-
 #ifndef LIBFT_H
 # define LIBFT_H
 
 # include <stdlib.h>
 # include <unistd.h>
 
-/**
- * @brief Not allowed to include limits.h
- */
 # define FT_LONG_MAX 9223372036854775807L
 
-/**
- * @struct s_list
- * @brief Linked list node.
- * @typedef t_list
- * @copybrief s_list
- * @property s_list::content
- * @brief @p void* to the node's contents.
- * @property s_list::next
- * @brief Pointer to the next node.
- * 
- * @p NULL for the final node in the list.
- */
 typedef struct s_list
 {
 	void			*content;
