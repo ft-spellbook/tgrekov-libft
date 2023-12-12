@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 14:26:57 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/11/07 21:52:34 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/12/12 09:35:47 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,6 @@
  * @dontinclude libft.h
  * @line /\* *********
  * @until /\* *********
- */
-
-/**
- * @page quick_links Quick Links
- * You're probably looking for @ref libft.h!  
- * Or maybe my @ref Makefile?
- */
-
-/**
- * @page Makefile
- * @include Makefile
  */
 
 #ifndef LIBFT_H

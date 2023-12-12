@@ -1,0 +1,13 @@
+/**
+ * @page Makefile
+ * @htmlonly
+ * <div id="author_date">
+ * tgrekov 2023/12/12 2023/12/12
+ * </div>
+ * @endhtmlonly
+ *
+ * This Makefile is probaby overly verbose. For better examples, please refer to my
+ * <a href="https://ft-spellbook.github.io/ft-spellbook/makefile_guide.html">Makefile Guide</a>
+ *
+ * @include Makefile
+ */
