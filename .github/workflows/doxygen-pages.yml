@@ -14,4 +14,3 @@ jobs:
     with:
       name: "tgrekov-libft"
       brief: "HIVE libft Oct 2023"
-      extract_static: NO
